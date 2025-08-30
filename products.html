@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bliss Bites - Fresh & Healthy Smoothies</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Header and Navigation -->
+     <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="assets/logo.png" alt="Bliss Bites Logo" class="logo">
+                    <span class="logo-text">Bliss Bites</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="products.html" class="nav-link">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="cart-container">
+                    <span class="cart-icon">🛒</span>
+                    <span class="cart-count" >0</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+      <main>
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Our Products</h1>
+                <p class="page-subtitle">Discover our full range of delicious and nutritious smoothies</p>
+            </div>
+        </section>
+    <!-- Products -->
+        <section class="products-section">
+            <div class="container">
+                <div class="products-grid-full">
+                    <div class="product-card">
+                        <img src="assets/product1.png" alt="Strawberry Banana Smoothie" class="product-image">
+                        <div class="product-content">
+                            <h3 class="product-name">Strawberry Banana</h3>
+                            <p class="product-description">A classic blend of sweet strawberries and creamy bananas</p>
+                            <p class="product-price">$8.99</p>
+                            <button class="add-to-cart-btn" onclick="addToCart('Strawberry Banana', 8.99)">Add to Cart</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <img src="assets/product2.png" alt="Green Detox Smoothie" class="product-image">
+                        <div class="product-content">
+                            <h3 class="product-name">Green Detox</h3>
+                            <p class="product-description">Spinach, apple, and cucumber for a healthy cleanse</p>
+                            <p class="product-price">$9.99</p>
+                            <button class="add-to-cart-btn" onclick="addToCart('Green Detox', 9.99)">Add to Cart</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <img src="assets/product3.png" alt="Tropical Mango Smoothie" class="product-image">
+                        <div class="product-content">
+                            <h3 class="product-name">Tropical Mango</h3>
+                            <p class="product-description">Exotic mango and pineapple transport you to paradise</p>
+                            <p class="product-price">$9.49</p>
+                            <button class="add-to-cart-btn" onclick="addToCart('Tropical Mango', 9.49)">Add to Cart</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <img src="assets/product4.png" alt="Chocolate Protein Shake" class="product-image">
+                        <div class="product-content">
+                            <h3 class="product-name">Chocolate Protein</h3>
+                            <p class="product-description">Rich chocolate flavor with added protein for muscle recovery</p>
+                            <p class="product-price">$10.99</p>
+                            <button class="add-to-cart-btn" onclick="addToCart('Chocolate Protein', 10.99)">Add to Cart</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <img src="assets/product1.png" alt="Berry Blast Smoothie" class="product-image">
+                        <div class="product-content">
+                            <h3 class="product-name">Berry Blast</h3>
+                            <p class="product-description">Mixed berries packed with antioxidants and flavor</p>
+                            <p class="product-price">$9.29</p>
+                            <button class="add-to-cart-btn" onclick="addToCart('Berry Blast', 9.29)">Add to Cart</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <img src="assets/product2.png" alt="Kale Power Smoothie" class="product-image">
+                        <div class="product-content">
+                            <h3 class="product-name">Kale Power</h3>
+                            <p class="product-description">Nutrient-dense kale with apple and ginger</p>
+                            <p class="product-price">$10.49</p>
+                            <button class="add-to-cart-btn" onclick="addToCart('Kale Power', 10.49)">Add to Cart</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <img src="assets/product3.png" alt="Citrus Sunrise Smoothie" class="product-image">
+                        <div class="product-content">
+                            <h3 class="product-name">Citrus Sunrise</h3>
+                            <p class="product-description">Orange, lemon, and grapefruit for a vitamin C boost</p>
+                            <p class="product-price">$8.79</p>
+                            <button class="add-to-cart-btn" onclick="addToCart('Citrus Sunrise', 8.79)">Add to Cart</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <img src="assets/product4.png" alt="Vanilla Protein Smoothie" class="product-image">
+                        <div class="product-content">
+                            <h3 class="product-name">Vanilla Protein</h3>
+                            <p class="product-description">Smooth vanilla protein blend for post-workout recovery</p>
+                            <p class="product-price">$10.99</p>
+                            <button class="add-to-cart-btn" onclick="addToCart('Vanilla Protein', 10.99)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+  <!-- Footer -->
+       <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Shop</h3>
+                    <ul class="footer-links">
+                        <li><a href="products.html" class="footer-link">All Products</a></li>
+                        <li><a href="products.html" class="footer-link">Smoothies</a></li>
+                        <li><a href="products.html" class="footer-link">Protein Shakes</a></li>
+                        <li><a href="products.html" class="footer-link">Detox Blends</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Learn</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html" class="footer-link">Our Story</a></li>
+                        <li><a href="about.html" class="footer-link">Health Benefits</a></li>
+                        <li><a href="#" class="footer-link">Nutrition Guide</a></li>
+                        <li><a href="#" class="footer-link">Recipes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Help</h3>
+                    <ul class="footer-links">
+                        <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+                        <li><a href="#" class="footer-link">FAQ</a></li>
+                        <li><a href="#" class="footer-link">Shipping content</a></li>
+                        <li><a href="#" class="footer-link">Returns</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html" class="footer-link">About Us</a></li>
+                        <li><a href="#" class="footer-link">Careers</a></li>
+                        <li><a href="#" class="footer-link">Press</a></li>
+                        <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section newsletter">
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Bliss Bites. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    
+</body>
+</html>
