@@ -44,7 +44,7 @@ button {
 .header {
     position: sticky;
     top: 0;
-    background: rgba(255, 245, 246, 0.95);
+    background: hsla(354, 100%, 98%, 0.95);
     backdrop-filter: blur(10px);
     z-index: 1000;
     border-bottom: 1px solid rgba(232, 69, 99, 0.1);
